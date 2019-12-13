@@ -17,7 +17,16 @@ Slack channel id.
 Slack user id.
 
 ### token (required)
-Slack api token. The token require scopes `chat:write:bot` and `chat:write:user`.
+Slack api token. The token require scopes:
+
+```
+channels:history
+groups:history
+im:history
+mpim:history 
+chat:write:bot
+chat:write:user
+```
 
 ### dry-run (optional)
 Output the message to be deleted. The message is not deleted.
